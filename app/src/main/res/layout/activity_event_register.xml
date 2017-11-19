@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="Type of Event"
+        android:background="@color/colorWhite"
+        android:layout_marginTop="20px"
+        android:id="@+id/textView"/>
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:id="@+id/eventName"
+        android:hint="Enter event name"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:id="@+id/description"
+        android:hint="Enter description"/>
+    <Button
+        android:id="@+id/pickTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:textColor="@color/colorWhite"
+        android:layout_marginTop="30dp"
+        android:background="@color/colorPrimary"
+        android:text="Pick Time" />
+    <Button
+        android:id="@+id/pickDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:textColor="@color/colorWhite"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorPrimary"
+        android:text="Pick Date" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorWhite"
+        android:layout_marginTop="40dp"
+        android:background="@color/colorPrimary"
+        android:text="Add Event" />
+</LinearLayout>

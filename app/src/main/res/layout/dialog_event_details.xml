@@ -1,0 +1,88 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.aadam.lokalandroid.dialogs.EventDetailsDialog">
+
+    <TextView
+        android:id="@+id/evName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/thin_line"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:text="EventName"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/thin_line"
+        android:layout_alignStart="@id/evName"
+        android:layout_below="@id/evName"
+        android:layout_marginTop="5dp"
+        android:text="address"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="15sp"
+        app:layout_constraintLeft_toLeftOf="@id/left_guideline" />
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/address"
+        android:layout_alignStart="@id/address"
+        android:layout_below="@id/address"
+        android:layout_marginTop="5dp"
+        android:text="date"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/date"
+        android:layout_alignStart="@id/date"
+        android:layout_below="@id/date"
+        android:layout_marginTop="5dp"
+        android:text="type"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/owner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/type"
+        android:layout_alignStart="@id/type"
+        android:layout_below="@id/type"
+        android:layout_marginTop="5dp"
+        android:text="owner"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="15sp" />
+    <RelativeLayout
+        android:id="@+id/thin_line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/owner"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/thin_line" />
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/thin_line"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="20dp"
+        android:layout_alignStart="@id/owner"
+        android:text="Description"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="15sp"/>
+</RelativeLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <string-array name="types">
+        <item>Party</item>
+        <item>Bar</item>
+        <item>Sport</item>
+        <item>Study</item>
+        <item>Charity</item>
+    </string-array>
+</resources>

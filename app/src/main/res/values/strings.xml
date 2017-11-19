@@ -5,7 +5,9 @@
     <string name="password">Password</string>
     <string name="register">Register</string>
     <string name="registerNow">Register Now!</string>
-
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="unattainable">"Address is unattainable!"</string>
+    <string name="full_address">%1$s</string>
+    <string name="numAttendees">%1$s</string>
+    <string name="join">join</string>
+    <string name="leave">leave</string>
 </resources>

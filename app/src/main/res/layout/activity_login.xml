@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context="com.example.aadam.lokalandroid.activities.LoginActivity">
+
+    <android.support.constraint.Guideline
+        android:id="@+id/leftGuidline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.05" />
+    <android.support.constraint.Guideline
+        android:id="@+id/rightGuidline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.95" />
+    <android.support.constraint.Guideline
+        android:id="@+id/bottomLogoGuidline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.40" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/bottomInputGuidline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.75" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/linearLayout"
+        app:layout_constraintLeft_toLeftOf="@id/leftGuidline"
+        app:layout_constraintRight_toRightOf="@id/rightGuidline"
+        app:layout_constraintBottom_toBottomOf="@id/bottomLogoGuidline"
+        android:background="@drawable/lokal"
+        android:id="@+id/imageView" />
+    <LinearLayout
+        android:orientation="vertical"
+        app:layout_constraintLeft_toLeftOf="@id/leftGuidline"
+        app:layout_constraintRight_toRightOf="@id/rightGuidline"
+        android:layout_width="0dp"
+        app:layout_constraintTop_toTopOf="@id/bottomLogoGuidline"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout">
+
+        <EditText
+            android:id="@+id/editTextEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:hint="Enter email"
+            android:padding="15dp"
+            android:background="@drawable/button"
+            android:inputType="textEmailAddress" />
+        <EditText
+            android:inputType="textPassword"
+            android:hint="Enter password"
+            android:padding="15dp"
+            android:textSize="20dp"
+            android:id="@+id/editTextPassword"
+            android:background="@drawable/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <Button
+            android:layout_margin="20dp"
+            android:id="@+id/buttonLogin"
+            android:text="Login"
+            android:background="@color/colorPrimaryDark"
+            android:textColor="@color/colorWhite"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/buttonFpass"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/bottomInputGuidline"
+        app:layout_constraintLeft_toLeftOf="@id/leftGuidline"
+        android:background="@color/colorTransparent"
+        android:text="Forgot password?"
+        android:textColor="@color/colorWhite"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/buttonReg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/bottomInputGuidline"
+        app:layout_constraintRight_toRightOf="@id/rightGuidline"
+        android:background="@color/colorTransparent"
+        android:text="Register Now"
+        android:textColor="@color/colorWhite"
+        android:textSize="15dp" />
+</android.support.constraint.ConstraintLayout>

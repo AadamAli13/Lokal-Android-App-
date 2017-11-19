@@ -1,0 +1,174 @@
+{
+  "project_info": {
+    "project_number": "279491649260",
+    "firebase_url": "https://lokalandroid-15269.firebaseio.com",
+    "project_id": "lokalandroid-15269",
+    "storage_bucket": "lokalandroid-15269.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:279491649260:android:4226c488b5f3e9f8",
+        "android_client_info": {
+          "package_name": "com.example.aadam.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "279491649260-pfbc6atvse909gkj1nidq0unn6vq9lit.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.aadam.myapplication",
+            "certificate_hash": "3b7e0c795f8494d5f2e24305bd6fb14e4aa8e85d"
+          }
+        },
+        {
+          "client_id": "279491649260-q9k0ajjc42j5j54bea9bkti0hlgg9io1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA1dN3WT7snfky9YVPkSgpnUZlkqQO35_A"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "279491649260-q9k0ajjc42j5j54bea9bkti0hlgg9io1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:279491649260:android:8c2b4d45851bd23c",
+        "android_client_info": {
+          "package_name": "lokal.org.lokalandroid"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "279491649260-3i7q70sgu6lm2hmq7r6a4527p865rmil.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "lokal.org.lokalandroid",
+            "certificate_hash": "30dacd6ce91d981afb0aaa565bcf7add4f1d164e"
+          }
+        },
+        {
+          "client_id": "279491649260-q9k0ajjc42j5j54bea9bkti0hlgg9io1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA1dN3WT7snfky9YVPkSgpnUZlkqQO35_A"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "279491649260-q9k0ajjc42j5j54bea9bkti0hlgg9io1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:279491649260:android:b5d46f0bd59ac2e9",
+        "android_client_info": {
+          "package_name": "com.example.ryan_schmidt.passwordresetdialog"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "279491649260-q9k0ajjc42j5j54bea9bkti0hlgg9io1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA1dN3WT7snfky9YVPkSgpnUZlkqQO35_A"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:279491649260:android:fb6146fad7fcbdae",
+        "android_client_info": {
+          "package_name": "com.example.aadam.lokalandroid"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "279491649260-qf107mjo5tu1lr3l2onprhrf9e74dkrs.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.aadam.lokalandroid",
+            "certificate_hash": "3b7e0c795f8494d5f2e24305bd6fb14e4aa8e85d"
+          }
+        },
+        {
+          "client_id": "279491649260-q9k0ajjc42j5j54bea9bkti0hlgg9io1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA1dN3WT7snfky9YVPkSgpnUZlkqQO35_A"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "279491649260-q9k0ajjc42j5j54bea9bkti0hlgg9io1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

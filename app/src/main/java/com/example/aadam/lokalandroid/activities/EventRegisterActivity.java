@@ -83,28 +83,24 @@ public class EventRegisterActivity extends AppCompatActivity implements AdapterV
     @Override
     public void onClick(View view) {
         if (view.getId() == dateButton.getId()) {
-            // Get the current date
-            String[] date = (new SimpleDateFormat("yyyy-MM-dd", Locale.US)).format(Calendar.getInstance().getTime()).split("-");
-
             // Create the date picker dialog
             dateDialog = new DatePickerDialog(this, new DatePickerDialog.OnDateSetListener() {
                 @Override
                 public void onDateSet(DatePicker datePicker, int year, int month, int day) {
                     pickedDate = year + "-" + month + "-" + day;
                 } // End of method
-            }, Integer.getInteger(date[0]), Integer.getInteger(date[1]), Integer.getInteger(date[2]));
+            }, 2017, 07, 15);
+            dateDialog.show();
         }
         else if (view.getId() == timeButton.getId()) {
-            // Get the current time
-            String[] time = (new SimpleDateFormat("HH:mm:ss", Locale.US)).format(Calendar.getInstance().getTime()).split("-");
-
             // Create the date picker dialog
             timeDialog = new TimePickerDialog(this, new TimePickerDialog.OnTimeSetListener() {
                 @Override
                 public void onTimeSet(TimePicker timePicker, int hour, int minute) {
                     pickedTime = hour + ":" + minute + ":00";
                 } // End of method
-            }, Integer.getInteger(time[0]), Integer.getInteger(time[1]), false);
+            }, 12, 00, false);
+            timeDialog.show();
         }
         else {
             // Declare and instantiate values
@@ -129,31 +125,25 @@ public class EventRegisterActivity extends AppCompatActivity implements AdapterV
                     // Get epoch time
                     long epoch = (new SimpleDateFormat("yyyy-MM-dd HH:mm:ss", Locale.US)).parse(pickedDate + " " + pickedTime).getTime();
 
-                    // Check if time is valid
-                    if (epoch <= (new Date()).getTime()) {
-                        Toast.makeText(getApplicationContext(), "Please enter a date and time that are past the current!", Toast.LENGTH_LONG).show();
-                    }
-                    else {
-                        // Get database reference
-                        DatabaseReference ref = FirebaseDatabase.getInstance().getReference();
+                    // Get database reference
+                    DatabaseReference ref = FirebaseDatabase.getInstance().getReference();
 
-                        // Create map with data
-                        HashMap<String, String> map = new HashMap<>();
-                        map.put("eventName", eventNameText);
-                        map.put("lat~long", getIntent().getStringExtra("lat~long"));
-                        map.put("type", type);
-                        map.put("description", descriptionText);
-                        map.put("date", Long.toString(epoch));
-                        map.put("owner", FirebaseAuth.getInstance().getCurrentUser().getDisplayName());
+                    // Create map with data
+                    HashMap<String, String> map = new HashMap<>();
+                    map.put("eventName", eventNameText);
+                    map.put("lat~long", getIntent().getStringExtra("lat~long"));
+                    map.put("type", type);
+                    map.put("description", descriptionText);
+                    map.put("date", Long.toString(epoch));
+                    map.put("owner", FirebaseAuth.getInstance().getCurrentUser().getDisplayName());
 
-                        // Add data to database
-                        ref.child("detailed_event").push().setValue(map).addOnSuccessListener(new OnSuccessListener<Void>() {
-                            @Override
-                            public void onSuccess(Void aVoid) {
-                                finish();
-                            } // End of method
-                        });
-                    } // End of if statement
+                    // Add data to database
+                    ref.child("detailed_event").push().setValue(map).addOnSuccessListener(new OnSuccessListener<Void>() {
+                        @Override
+                        public void onSuccess(Void aVoid) {
+                            finish();
+                        } // End of method
+                    });
                 } catch (ParseException e) {
                     e.printStackTrace();
                 } // End of try statement

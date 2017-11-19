@@ -16,6 +16,7 @@ import android.widget.TimePicker;
 import android.widget.Toast;
 
 import com.example.aadam.lokalandroid.R;
+import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
@@ -146,7 +147,12 @@ public class EventRegisterActivity extends AppCompatActivity implements AdapterV
                         map.put("owner", FirebaseAuth.getInstance().getCurrentUser().getDisplayName());
 
                         // Add data to database
-                        ref.child("detailed_event").push().setValue(map);
+                        ref.child("detailed_event").push().setValue(map).addOnSuccessListener(new OnSuccessListener<Void>() {
+                            @Override
+                            public void onSuccess(Void aVoid) {
+                                finish();
+                            } // End of method
+                        });
                     } // End of if statement
                 } catch (ParseException e) {
                     e.printStackTrace();

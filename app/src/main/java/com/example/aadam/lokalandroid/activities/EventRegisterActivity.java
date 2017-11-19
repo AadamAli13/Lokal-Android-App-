@@ -38,6 +38,7 @@ public class EventRegisterActivity extends AppCompatActivity implements AdapterV
     private Spinner spinner;
     private Button dateButton;
     private Button timeButton;
+    private Button addEvent;
     private DatePickerDialog dateDialog;
     private TimePickerDialog timeDialog;
     private String pickedDate;
@@ -63,7 +64,11 @@ public class EventRegisterActivity extends AppCompatActivity implements AdapterV
 
         // Instantiate buttons and their listener
         dateButton = findViewById(R.id.pickDate);
+        dateButton.setOnClickListener(this);
         timeButton = findViewById(R.id.pickTime);
+        timeButton.setOnClickListener(this);
+        addEvent = findViewById(R.id.addEvent);
+        addEvent.setOnClickListener(this);
     } // End of method
 
     @Override

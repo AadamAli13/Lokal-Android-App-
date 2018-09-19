@@ -22,7 +22,7 @@ import java.util.regex.Pattern;
 
 /**
  * Registers a user using Firebase's authentication system
- * @author Samer Alabi
+ * @author Samer Albi Ryley Reid Ryan Schmidt and Aadam Ali
  */
 @SuppressWarnings("FieldCanBeLocal")
 public class RegisterActivity extends AppCompatActivity implements View.OnClickListener {

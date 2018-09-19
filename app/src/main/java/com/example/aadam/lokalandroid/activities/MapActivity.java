@@ -41,12 +41,15 @@ import com.google.firebase.database.Query;
 import com.google.firebase.database.ValueEventListener;
 
 import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Iterator;
+import java.util.Set;
 
 import static java.lang.Math.cos;
 
 /**
  * Main activity of program, shows a map with public events
- * @author Samer Alabi
+ * @author Samer Alabi Ryan Schmidt Ryley Reid and Aadam Ali
  */
 @SuppressWarnings({"FieldCanBeLocal", "ConstantConditions"})
 public class MapActivity extends AppCompatActivity implements OnMapReadyCallback,
@@ -236,7 +239,10 @@ public class MapActivity extends AppCompatActivity implements OnMapReadyCallback
      */
     private void getDataSet(LatLng latLng) {
         // Remove all markers on map
-        for (String id : markerHashMap.keySet()) {
+        Set<String> keySet = new HashSet<>(markerHashMap.keySet());
+
+        // Loop through the iterable keyset
+        for (String id : keySet) {
             markerHashMap.remove(id).remove();
         } // End of for loop
 
@@ -251,6 +257,7 @@ public class MapActivity extends AppCompatActivity implements OnMapReadyCallback
 
         // Add listener to query
         queryForData.addChildEventListener(this);
+
     } // End of method
 
     /**
